@@ -13,6 +13,7 @@
   "main": "postcss.config.js",
   "scripts": {
     "start":"vite",
+    "dev":"tailwindcss build main.css -o style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
