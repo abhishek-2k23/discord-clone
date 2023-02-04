@@ -2,7 +2,13 @@
 module.exports = {
   content: ["*"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        ggsansN:["ggsansN"],
+        ggsans:["ggsans","sans-serif"],
+        ginto:["ginto"]
+      }
+    },
   },
   plugins: [],
 }
