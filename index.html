@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/all.css">
     <title>Discord Clone</title>
 </head>
 <body>
     <div class="wrapper overflow-hidden">
         <!-- nav -->
         <nav class="bg-[#404EED]"> 
-            <div class="w-10/12 flex justify-between bg-[#404EED] mx-auto px-10 items-center py-5">
+            <div class="lg:w-10/12 w-full flex  justify-between bg-[#404EED] mx-auto px-10 items-center py-5">
                  <img src="images/logo.svg" alt="">
-                 <ul class="flex gap-10 text-white font-ggsans font-semibold ">
+                 <ul class="lg:flex hidden gap-10 text-white font-ggsans font-semibold ">
                     <li><a class="hover:underline underline-offset-1" href="#">Download</a></li>
                     <li><a class="hover:underline underline-offset-1" href="#">Nitro</a></li>
                     <li><a class="hover:underline underline-offset-1" href="#">Discover</a></li>
@@ -24,63 +24,166 @@
                     <li><a class="hover:underline underline-offset-1" href="#">Blog</a></li>
                     <li><a class="hover:underline underline-offset-1" href="#">Careers</a></li>
                  </ul>
-                 <button class="bg-white rounded-3xl p-2 px-4 text-black text-opacity-75 font-ggsans font-[200] ">
-                    open Discord
-                 </button>
+                <div class="flex items-center">
+                    <button class="bg-white rounded-3xl p-2 px-4 text-black  font-ggsansN font-[400] sm:block hidden">
+                        Open Discord
+                    </button>
+                    <div class="lg:hidden block">
+                    <i class="fa fa-sharp fa-solid fa-bars hidden ml-5 fa-2x text-white"></i>
+                    </div>
+                </div>
             </div>
         </nav>
 
         <!-- header -->
-        <header class="w-full flex bg-[#404EED] pt-52 justify-between bg-[url(images/Image0.svg)] bg-[2800%] bg-fit">
-            <img src="images/Image1.svg" alt="" class="order-3 -mr-56 z-20 ">
-            <div class="order-2 w-full  space-y-5 -mt-14 ">
-                <p class="font-ginto text-6xl text-white w-full text-center font-extrabold">IMAGINE A PLACE...</p>
-                <p class="font-ggsansN text-slate-100 text-center text-[19px] leading-8 ">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
-                <div class=" flex items-center justify-center gap-7">
-                 <button class="bg-white rounded-[1.9rem] py-3 px-6 text-black  font-ggsansN text-2xl flex">
-                   <span><i class="fa fa-light fa-arrow-down-to-bracket text-black"></i></span>  Download for windows
+        <header class="w-full flex md:flex-row flex-col bg-[#404EED] lg:pt-56 pt-12 justify-between md:bg-[url(images/Image0.svg)] bg-[1700%] bg-cover bg-fit space-y-5 md:space-y-0">
+            <img src="images/Image1.svg" alt="" class="order-3 mr-[-14.7rem] z-20 md:self-end md:block hidden">
+            <div class="order-2 w-full  space-y-5 lg:-mt-14 ml-5 lg:ml-0 md:mb-20 lg:mb-0">
+                <p class="w-full font-ginto md:text-5xl text-2xl text-white  lg:text-center font-extrabold">IMAGINE A PLACE...</p>
+                <p class="font-ggsansN text-slate-100 lg:text-center md:text-[19px] text-base leading-8 ">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
+                <div class=" flex lg:flex-row flex-col md:items-center md:justify-center justify-start items-start gap-7">
+                 <button class="bg-white rounded-[1.9rem] py-3 px-7 text-black hover:text-[#5865F4] font-ggsansN text-xl flex">
+                    <span><img src="images/download.svg" alt="" class="mr-3"></span>  Download for windows
                  </button>
-                 <button class="bg-black rounded-[1.8rem] py-3 px-6 text-white  font-ggsansN text-2xl ">
+                 <button class="bg-black rounded-[1.8rem] py-3 px-7 text-white  font-ggsansN text-xl ">
                     Open Discord in your browser
                  </button>
                 </div>
             </div>
-            <img src="images/Image2.svg" alt="" class="order-1 -ml-[17rem] z-20">
+            <img src="images/Image2.svg" alt="" class="lg:order-1 order-3 lg:-ml-[16rem] z-20 lg:block md:hidden block -ml-10 mb-10 md:mb-0">
         </header>
 
         <!-- section-1 -->
-        <section class="pb-32">
-            <div class="w-11/12 pt-32 flex justify-evenly items-center mx-auto">
-                <img src="images/section1Image.svg" alt="">
-                <div class="space-y-3 w-[30%]">
-                    <h1 class="font-ggsans text-5xl font-extrabold">Create an invite-only place where you belong</h1>
-                    <p class="font-ggsansN text-[22px]">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
+        <section class="lg:pb-32 pb-14">
+            <div class="lg:w-11/12 w-full md:pt-32 pt-20 flex md:flex-row flex-col justify-evenly items-center md:mx-auto md:px-10 lg:px-0 gap-4 lg:gap-0" >
+                <img src="images/section1Image.svg" alt="" class="md:w-6/12 ">
+                <div class="lg:space-y-3 lg:w-[30%] md:w-9/12 w-full p-5 md:p-0 space-y-5">
+                    <h1 class="font-ggsans md:text-5xl text-xl font-extrabold lg:leading-[3rem]">Create an invite-only place where you belong</h1>
+                    <p class="font-ggsansN lg:text-[22px] text-base lg:leading-9">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
                 </div>
             </div>
         </section>
 
         <!-- section 2 -->
-        <section class="bg-[#F6F6F6] pb-32">
-            <div class="w-11/12 pt-32 flex justify-evenly items-center mx-auto ">
-                <img src="images/section2Image.svg" alt="" class="order-2">
-                <div class="space-y-8 w-[28%] order-1">
-                    <h1 class="font-ggsans text-5xl font-bold leading-[3.7rem]">Where hanging out is easy</h1>
-                    <p class="font-ggsansN text-xl leading-8">Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
+        <section class="bg-[#F6F6F6] md:pb-32 pb-20">
+            <div class="lg:w-11/12 w-full md:pt-32 pt-20 flex md:flex-row flex-col justify-evenly items-center md:mx-auto md:px-10 lg:px-0 gap-4 lg:gap-0" >
+                <div class="lg:space-y-3 lg:w-[30%] md:w-9/12 w-full p-5 md:p-0 space-y-5 order-2 md:order-1">
+                    <h1 class="font-ggsans md:text-5xl text-xl font-extrabold lg:leading-[3rem]">Where hanging out is easy</h1>
+                    <p class="font-ggsansN lg:text-[22px] text-base lg:leading-9">Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
                 </div>
+                <img src="images/section2Image.svg" alt="" class="md:w-6/12 order-1 md:order-2">
+            </div>
+        </section>
+
+        <!-- section-3 -->
+        <section class="pb-32">
+            <div class="lg:w-11/12 w-full md:pt-32 pt-20 flex md:flex-row flex-col justify-evenly items-center md:mx-auto md:px-10 lg:px-0 gap-4 lg:gap-0" >
+                <div class="lg:space-y-3 lg:w-[30%] md:w-9/12 w-full p-5 md:p-0 space-y-5 order-2 md:order-1">
+                    <h1 class="font-ggsans md:text-5xl text-xl font-extrabold lg:leading-[3rem]">From few to a fandom</h1>
+                    <p class="font-ggsansN lg:text-[22px] text-base lg:leading-9">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
+                </div>
+                <img src="images/section3Image.svg" alt="" class="md:w-6/12 order-1 md:order-2">
             </div>
         </section>
 
         
-        <!-- section-3 -->
-        <section class="pb-32">
-            <div class="w-11/12 pt-32 flex justify-evenly items-center mx-auto">
-                <img src="images/section3Image.svg" alt="">
-                <div class="space-y-8 w-[30%]">
-                    <h1 class="font-ggsans text-5xl font-extrabold leading-[3.5rem]">From few to a fandom</h1>
-                    <p class="font-ggsansN text-[22px] opacity-90">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more..</p>
+        <!-- section-4 -->
+        <section class="pb-32 bg-[#F6F6F6]">
+            <div class="lg:w-9/12 lg:pt-32 flex flex-col justify-evenly items-center mx-auto p-5">
+                <div class="space-y-5 w-full">
+                    <h1 class="font-ginto lg:text-[2.9rem] md:text-[2rem] text-[1.3rem] leading-6 font-extrabold lg:leading-[3rem] lg:text-center">RELIABLE TECH FOR STAYING CLOSE</h1>
+                    <p class="font-ggsansN lg:text-[22px] text-base opacity-90 lg:text-center lg:px-11">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
+                </div>
+                <img src="images/section4Image.svg" alt="" class="w-full">
+                <div class="mt-20">
+                    <img src="images/section5Image.svg" alt="">
+                    <h1 class="font-ggsans text-3xl text-center">Ready to Start your journey?</h1>
+                    <div class="px-2 py-3 rounded-3xl bg-[#5865F2] lg:w-2/4 self-start mx-auto mt-5 text-center text-white">
+                        <i class="fa fa-regular fa-arrow-down-to-bracket fa-10x z-50 "></i> Download for windows
+                    </div>
                 </div>
             </div>
         </section>
+
+
+        <!-- footer -->
+        <footer class="bg-[#23272A] py-20">
+            <div class=" w-10/12 mx-auto flex-wrap  grid lg:grid-cols-5 grid-cols-2  lg:grid-rows-1 auto-rows-auto border-b-2 border-[#5865F2] pb-10 gap-10">
+                <!-- box-1 -->
+                <div class="w-full space-y-5 col-span-2 lg:col-span-1">
+                    <h1 class="text-[#5865F2] font-ginto text-4xl leading-10">IMAGINE A PLACE</h1>
+                    <div class="flex  items-center gap-0">
+                        <img src="images/us-flag.png" alt="" class="w-8 ">
+                        <p class="ml-2 text-white">English, USA <span><i class="fa fa-light fa-chevron-down"></i></span></p>
+                    </div>
+                    <div class="flex gap-6 text-white">
+                        <i class="fa fa-brands fa-twitter fa-1x"></i>
+                        <i class="fa fa-brands fa-instagram fa-1x"></i>
+                        <i class="fa fa-brands fa-square-facebook fa-1x"></i>
+                        <i class="fa fa-brands fa-youtube fa-1x"></i>
+                    </div>
+
+                </div>
+                <!-- box-2 -->
+                <div class="lg:w-full w-1/2  flex flex-col gap-4 justify-start lg:items-center ">
+                    <ul class="text-white space-y-2">
+                        <li class="text-[#5865F2]"><a href="#" class="hover:underline underline-offset-1">Product</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Download</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Nitro</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Status</a></li>
+                    </ul>
+                </div>
+                <!-- box3 -->
+                <div class="lg:w-full w:1/2 flex flex-col gap-4 justify-start lg:items-center">
+                    <ul class="text-white space-y-2">
+                        <li class="text-[#5865F2]"><a href="#" class="hover:underline underline-offset-1">Company</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">About</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Jobs</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Branding</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Newsroom</a></li>
+                    </ul>
+                </div>
+                <!-- box4 -->
+                <div class="w-full w:1/2   flex flex-col gap-4 justify-start lg:items-center">
+                    <ul class="text-white space-y-2">
+                        <li class="text-[#5865F2]"><a href="#" class="hover:underline underline-offset-1">Resources</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">College</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Support</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Saftey</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Blog</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Feedback</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Developers</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Streamkit</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Creators</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Community</a></li>
+                    </ul>
+                </div>
+                <!-- box5 -->
+                <div class="w-full w:1/2  flex flex-col gap-4 justify-start lg:items-center">
+                    <ul class="text-white space-y-2">
+                        <li class="text-[#5865F2]"><a href="#" class="hover:underline underline-offset-1">Policies</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Teams</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Privacy</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Cookie Settings</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Guidlines</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Acknowledgement</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Licenses</a></li>
+                        <li><a href="#" class="hover:underline underline-offset-1">Moderation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-between items-center w-10/12 mx-auto pt-10">
+
+                <img src="images/logo.svg" alt="">
+                
+                <button class="bg-[#5865F2] rounded-3xl p-2 px-4 text-white  font-ggsansN font-[400] ">
+                    Open Discord
+                 </button>
+            </div>
+        </footer>
     </div>
+
+    
+    <script src="https://kit.fontawesome.com/d3cb673d00.js" crossorigin="anonymous"></script>
 </body>
 </html>
